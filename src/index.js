@@ -2,21 +2,26 @@
 import React from "react";
 import ReactDom from "react-dom";
 import Navbar from "./comp/Navbar.component"
+import UnderNavMarquee from "./comp/Marquee.component";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 
 // Create first component function / class or whatever
 
 function Tennis() {
   return (
-    <main>
-      <Navbar />
-      <ul>
-        <li>Create nav component</li>
-        <li>Players, Games</li>
-        <li>CRUD Players: Name, etc, too early to integrate sso?</li>
-        <li>CRUD Games: Tennis games</li>
-      </ul>
-    </main>
+    <>
+    <Navbar />
+      <UnderNavMarquee />
+      <main>
+        <ul style={{marginTop: "60px"}}>
+          <li>Create nav component</li>
+          <li>Players, Games</li>
+          <li>CRUD Players: Name, etc, too early to integrate sso?</li>
+          <li>CRUD Games: Tennis games</li>
+        </ul>
+      </main>
+    </>
   );
 }
 
