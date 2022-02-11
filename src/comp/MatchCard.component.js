@@ -7,8 +7,8 @@ const MatchCard = (props) => {
     <>
       <div className="matchCardContainer">
         <div className="namesContainer">
-            <div className="winnerName">{winner_name}</div>
-            <div className="loserName">{loser_name}</div>            
+          <div className="winnerName">{winner_name}</div>
+          <div className="loserName">{loser_name}</div>
         </div>
         <div className="scoreContainer">{match_score_tiebreaks}</div>
       </div>
